@@ -63,7 +63,7 @@ class CategoryProduct extends Component {
         return (
           <div className={classes.root}>
             <Paper elevation={3} className="product" style={{height:'200px', width:'100%'}}>
-                <div className="product-image">
+                <div className="product-images">
                   <img src={this.props.image} alt={this.props.title} />
                 </div>
                 <div className="product-box">

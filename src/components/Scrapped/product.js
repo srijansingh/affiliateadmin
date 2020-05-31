@@ -66,7 +66,8 @@ class Product extends Component {
             isLoading: false,
             searchItem : '',
             products : [],
-            count : 0
+            count : 0,
+            error:false
         }
     }
 
@@ -98,7 +99,8 @@ class Product extends Component {
                 this.setState({
                     products : response.post,
                     count : response.post.length,
-                    isLoading:false
+                    isLoading:false,
+                    error:false
                 })
                
                 
@@ -108,8 +110,9 @@ class Product extends Component {
             console.log(err);
             this.setState({
                 isLoading:false,
+                error:true
             })
-            alert(err);
+    
         })
     }
 
@@ -174,6 +177,17 @@ class Product extends Component {
             </div>
             );
         }
+
+        // else if(this.state.searchItem!=='' && !this.state.isLoading && this.state.error){
+        //     Listing = (
+        //         <div className={classes.root}>
+        //         <Paper elevation={3} style={{height:'200px', width:'800px', display:'flex',alignItems:'center', justifyContent:'space-around'}}>
+        //             <div style={{color:'red',fontSize:'1.2rem',fontWeight:'bold'}}>Something went wrong. Please check your internet connection</div>
+        //         </Paper>
+        //     </div>
+        //     );
+        // }
+
 
         else if(this.state.products!==[]){
             Listing = this.state.products.map((product, index) => {
