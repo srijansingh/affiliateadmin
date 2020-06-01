@@ -75,7 +75,7 @@ class Active extends Component {
             isLoading:true
         });
 
-        fetch('http://localhost:8080/api/activeproduct', {
+        fetch('https://warm-scrubland-66696.herokuapp.com/api/activeproduct', {
             method: "GET",
             headers: {
                 "Accept": "application/json",

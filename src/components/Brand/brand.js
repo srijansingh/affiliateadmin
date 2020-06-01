@@ -82,7 +82,7 @@ class Brand extends Component {
             isLoading:true
         });
 
-        fetch('http://localhost:8080/api/brand', {
+        fetch('https://warm-scrubland-66696.herokuapp.com/api/brand', {
             method: "GET",
             headers: {
                 "Accept": "application/json",
@@ -121,7 +121,7 @@ class Brand extends Component {
             isProductLoading:true
         });
 
-        fetch('http://localhost:8080/api/brand/product', {
+        fetch('https://warm-scrubland-66696.herokuapp.com/api/brand/product', {
             method :'POST',
             headers: {
                 "Accept": "application/json",

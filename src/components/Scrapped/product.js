@@ -79,7 +79,7 @@ class Product extends Component {
             isLoading:true
         })
         console.log(this.state)
-        fetch('http://localhost:8080/api/product/search', {
+        fetch('https://warm-scrubland-66696.herokuapp.com/api/product/search', {
             method :'POST',
             headers: {
                 "Accept": "application/json",

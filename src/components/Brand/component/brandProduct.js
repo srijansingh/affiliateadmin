@@ -22,7 +22,7 @@ class BrandProduct extends Component {
 
   handleStatus =(sid) => {
 
-    fetch('http://localhost:8080/api/update/active', {
+    fetch('https://warm-scrubland-66696.herokuapp.com/api/update/active', {
       method: 'PUT',
       headers : {
         "Accept": "application/json",

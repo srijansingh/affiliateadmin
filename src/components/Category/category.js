@@ -122,7 +122,7 @@ class Category extends Component {
             isProductLoading:true
         });
 
-        fetch('http://localhost:8080/api/category/product', {
+        fetch('https://warm-scrubland-66696.herokuapp.com/api/category/product', {
             method :'POST',
             headers: {
                 "Accept": "application/json",

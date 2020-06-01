@@ -33,7 +33,7 @@ class SearchResult extends Component {
 
     handleStatus =(sid) => {
 
-      fetch('http://localhost:8080/api/update/active', {
+      fetch('https://warm-scrubland-66696.herokuapp.com/api/update/active', {
         method: 'PUT',
         headers : {
           "Accept": "application/json",
@@ -51,6 +51,7 @@ class SearchResult extends Component {
       .then(response => {
             console.log(response);
             alert("Product added to catalogue");
+            window.location.reload(false);
     })
     .catch(err => {
         console.log(err);

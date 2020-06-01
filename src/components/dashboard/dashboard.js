@@ -30,7 +30,7 @@ class  Dashboard extends Component {
     }
 
     componentDidMount(){
-        fetch('http://localhost:8080/api/count', {
+        fetch('https://warm-scrubland-66696.herokuapp.com/api/count', {
             method: "GET",
             headers: {
                 "Accept": "application/json",
@@ -54,7 +54,7 @@ class  Dashboard extends Component {
             })
        
 
-        fetch('http://localhost:8080/api/countcat', {
+        fetch('https://warm-scrubland-66696.herokuapp.com/api/countcat', {
             method: "GET",
             headers: {
                 "Accept": "application/json",
@@ -78,7 +78,7 @@ class  Dashboard extends Component {
             })
         
         
-        fetch('http://localhost:8080/api/countbrand', {
+        fetch('https://warm-scrubland-66696.herokuapp.com/api/countbrand', {
             method: "GET",
             headers: {
                 "Accept": "application/json",
@@ -102,7 +102,7 @@ class  Dashboard extends Component {
             })
        
 
-        fetch('http://localhost:8080/api/countactive', {
+        fetch('https://warm-scrubland-66696.herokuapp.com/api/countactive', {
             method: "GET",
             headers: {
                 "Accept": "application/json",
