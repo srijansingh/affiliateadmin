@@ -12,6 +12,7 @@ import Category from './components/Category/category';
 import Brand from './components/Brand/brand';
 import Customer from './components/Customer/customer';
 import Account from './components/Account/account';
+import Add from './components/Add/add';
 class App extends Component {
   state = {
     isAuth: false,
@@ -194,6 +195,14 @@ class App extends Component {
             exact
             render={props => (
               <Account userId={this.state.userId}  token={this.state.token} />
+            )}
+          />
+
+          <Route
+            path="/add-category"
+            exact
+            render={props => (
+              <Add userId={this.state.userId}  token={this.state.token} />
             )}
           />
           <Redirect to="/" />

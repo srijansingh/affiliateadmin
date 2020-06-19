@@ -64,7 +64,12 @@ const styles = (theme) => ({
 
                     <ListItemLink key="1"  href="/products">
                             <ListItemIcon><LabelIcon style={{color:"blue"}}/></ListItemIcon>
-                            <ListItemText primary="Scrapped Product" />
+                            <ListItemText primary="Search Product" />
+                    </ListItemLink>
+
+                    <ListItemLink key="1"  href="/add-category">
+                            <ListItemIcon><LabelIcon style={{color:"blue"}}/></ListItemIcon>
+                            <ListItemText primary="Add Category" />
                     </ListItemLink>
                              
                     <ListItemLink key="2" href="/active">
